@@ -44,7 +44,7 @@ function ArticleByID() {
 
       try {
         const res = await axios.get(
-          `http://localhost:4000/user-api/article/${id}`,
+          `https://blog-backend-je06.onrender.com/user-api/article/${id}`,
           { withCredentials: true },
         );
 
@@ -78,7 +78,7 @@ function ArticleByID() {
 
     try {
       const res = await axios.patch(
-        `http://localhost:4000/author-api/articles/${id}/status`,
+        `https://blog-backend-je06.onrender.com/author-api/articles/${id}/status`,
         { isArticleActive: newStatus },
         { withCredentials: true },
       );

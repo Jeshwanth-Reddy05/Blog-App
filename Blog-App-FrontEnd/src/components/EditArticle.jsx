@@ -33,7 +33,7 @@ function EditArticle() {
       const fetchArticle = async () => {
         setLoading(true);
         try {
-          const res = await axios.get(`http://localhost:4000/user-api/article/${id}`, { withCredentials: true });
+          const res = await axios.get(`https://blog-backend-je06.onrender.com/user-api/article/${id}`, { withCredentials: true });
 
           const data = res.data.payload;
 
@@ -56,7 +56,7 @@ function EditArticle() {
   // Update article
   const updateArticle = async (data) => {
     try {
-      const res = await axios.put(`http://localhost:4000/author-api/articles/${id}`, data, { withCredentials: true });
+      const res = await axios.put(`https://blog-backend-je06.onrender.com/author-api/articles/${id}`, data, { withCredentials: true });
 
       toast.success("Article updated");
 

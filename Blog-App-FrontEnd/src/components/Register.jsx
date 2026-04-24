@@ -46,7 +46,7 @@ function Register() {
         console.log("its user");
         // req to user api
         let resObj = await axios.post(
-          "http://localhost:4000/user-api/users",
+          "https://blog-backend-je06.onrender.com/user-api/users",
           formData,
         );
         console.log(resObj);
@@ -56,7 +56,7 @@ function Register() {
       }
       if (role === "AUTHOR") {
         let resObj = await axios.post(
-          "http://localhost:4000/user-api/users",
+          "https://blog-backend-je06.onrender.com/user-api/users",
           formData,
         );
         console.log(resObj);
